@@ -20,17 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="3333   范数、距离与相似度范数（“长度”）定义1：设$||\cdot||$为向量空间$R_{n}$ 的实值函数满足：$1^o,$ 非负性:$$ ||x|| \geq 0 $$其中，$||x||&#x3D;0 \iff x &#x3D; 0$$2^o,$ 齐次性：$$\forall k\in R,||kx|| &#x3D; |k| ||x||$$$3^o,$ 三角不等式：$$||x+y||\l">
+  <meta name="description" content="3333333">
 <meta property="og:type" content="article">
 <meta property="og:title" content="范数、距离与相似度">
 <meta property="og:url" content="http://example.com/2024/03/14/%E8%8C%83%E6%95%B0%E3%80%81%E8%B7%9D%E7%A6%BB%E4%B8%8E%E7%9B%B8%E4%BC%BC%E5%BA%A6/index.html">
 <meta property="og:site_name" content="hx&#39;s blog">
-<meta property="og:description" content="3333   范数、距离与相似度范数（“长度”）定义1：设$||\cdot||$为向量空间$R_{n}$ 的实值函数满足：$1^o,$ 非负性:$$ ||x|| \geq 0 $$其中，$||x||&#x3D;0 \iff x &#x3D; 0$$2^o,$ 齐次性：$$\forall k\in R,||kx|| &#x3D; |k| ||x||$$$3^o,$ 三角不等式：$$||x+y||\l">
+<meta property="og:description" content="3333333">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2024/03/14/%E8%8C%83%E6%95%B0%E3%80%81%E8%B7%9D%E7%A6%BB%E4%B8%8E%E7%9B%B8%E4%BC%BC%E5%BA%A6/%E6%9B%BC%E5%93%88%E9%A1%BF%E8%B7%9D%E7%A6%BB%E5%92%8C%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E8%B7%9D%E7%A6%BB.png">
+<meta property="og:image" content="http://example.com/2024/03/14/%E8%8C%83%E6%95%B0%E3%80%81%E8%B7%9D%E7%A6%BB%E4%B8%8E%E7%9B%B8%E4%BC%BC%E5%BA%A6/%E6%B1%89%E6%98%8E%E8%B7%9D%E7%A6%BB.png">
 <meta property="article:published_time" content="2024-03-14T07:57:44.000Z">
-<meta property="article:modified_time" content="2024-03-14T10:07:02.184Z">
+<meta property="article:modified_time" content="2024-03-14T14:25:12.436Z">
 <meta property="article:author" content="hx">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2024/03/14/%E8%8C%83%E6%95%B0%E3%80%81%E8%B7%9D%E7%A6%BB%E4%B8%8E%E7%9B%B8%E4%BC%BC%E5%BA%A6/%E6%9B%BC%E5%93%88%E9%A1%BF%E8%B7%9D%E7%A6%BB%E5%92%8C%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E8%B7%9D%E7%A6%BB.png">
 
 <link rel="canonical" href="http://example.com/2024/03/14/%E8%8C%83%E6%95%B0%E3%80%81%E8%B7%9D%E7%A6%BB%E4%B8%8E%E7%9B%B8%E4%BC%BC%E5%BA%A6/">
 
@@ -189,7 +192,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-03-14 15:57:44 / 修改时间：18:07:02" itemprop="dateCreated datePublished" datetime="2024-03-14T15:57:44+08:00">2024-03-14</time>
+              <time title="创建时间：2024-03-14 15:57:44 / 修改时间：22:25:12" itemprop="dateCreated datePublished" datetime="2024-03-14T15:57:44+08:00">2024-03-14</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -212,10 +215,58 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>3333</p>
-<!--moe-->
-
-<h2 id="范数、距离与相似度"><a href="#范数、距离与相似度" class="headerlink" title="范数、距离与相似度"></a>范数、距离与相似度</h2><h3 id="范数（“长度”）"><a href="#范数（“长度”）" class="headerlink" title="范数（“长度”）"></a>范数（“长度”）</h3><p><strong>定义1</strong>：设$||\cdot||$为向量空间$R_{n}$ 的实值函数满足：<br>$1^o,$ 非负性:<br>$$ ||x|| \geq 0 $$<br>其中，$||x||&#x3D;0 \iff x &#x3D; 0$<br>$2^o,$ 齐次性：<br>$$\forall k\in R,||kx|| &#x3D; |k| ||x||$$<br>$3^o,$ 三角不等式：<br>$$||x+y||\leq ||x|| + ||y||$$<br>则把$||\cdot||$称为向量范数。<br><strong>常用的向量范数</strong><br>$x&#x3D;(x_{1},x_2,\cdots,x_n)^T$<br>$1^o,$ 0-范数:<br>$${||x||}<em>0 &#x3D; n$$<br>其中n为x中非零元素的个数。<br>$2^o,$ 1-范数:<br>$${||x||}<em>1 &#x3D; \sum</em>{i&#x3D;1}^n|x_i|$$<br>$3^o,$ 2-范数:<br>$$||x||<em>2 &#x3D; \sqrt{\sum</em>{i&#x3D;1}^nx_i^2}$$<br>$4^o,$ $\infty$-范数:<br>$$<br>||x||<em>\infty &#x3D; \max</em>{1 \leq i \leq n}|x_i|<br>$$<br><strong>定理</strong> (范数的等价性)<br>$$<br>\begin{array}{ccccc}<br>m||\cdot||</em>{P_2} &amp; \leq &amp; || \cdot ||<em>{P</em>{1}} &amp; \leq &amp; M||\cdot||_{P_2} \<br>||x||_\infty &amp; \leq &amp; ||x||_1 &amp; \leq &amp; n||x||_\infty \<br>||x||_\infty &amp; \leq &amp; ||x||_2 &amp; \leq &amp; \sqrt{n}||x||_\infty<br>\end{array}<br>$$</p>
+        <p>3333333 <span id="more"></span></p>
+<h3 id="范数长度">范数（“长度”）</h3>
+<p><strong>定义1</strong>：设<span class="math inline">\(||\cdot||\)</span>为向量空间<span class="math inline">\(R_{n}\)</span> 的实值函数满足：<br>
+<span class="math inline">\(1^o\,\)</span> 非负性: <span class="math display">\[ ||x|| \geq 0 \]</span><br>
+其中，<span class="math inline">\(||x||=0 \iff x = 0\)</span><br>
+<span class="math inline">\(2^o\,\)</span> 齐次性：<br>
+<span class="math display">\[\forall k\in R,||kx|| = |k| ||x||\]</span> <span class="math inline">\(3^o\,\)</span> 三角不等式： <span class="math display">\[||x+y||\leq ||x|| + ||y||\]</span> 则把<span class="math inline">\(||\cdot||\)</span>称为向量范数。<br>
+<strong>常用的向量范数</strong></p>
+<p><span class="math inline">\(x=(x_{1},x_2,\cdots,x_n)^T\)</span><br>
+<span class="math inline">\(1^o\,\)</span> 0-范数:<br>
+<span class="math display">\[{||x||}_0 = n\]</span> 其中n为x中非零元素的个数。<br>
+<span class="math inline">\(2^o\,\)</span> 1-范数:<br>
+<span class="math display">\[{||x||}_1 = \sum_{i=1}^n|x_i|\]</span> <span class="math inline">\(3^o\,\)</span> 2-范数: <span class="math display">\[||x||_2 = \sqrt{\sum_{i=1}^nx_i^2}\]</span> <span class="math inline">\(4^o\,\)</span> <span class="math inline">\(\infty\)</span>-范数: <span class="math display">\[
+||x||_\infty = \max_{1 \leq i \leq n}|x_i|
+\]</span> <strong>定理</strong> (范数的等价性) <span class="math display">\[
+\begin{array}{ccccc}
+m||\cdot||_{P_2} &amp; \leq &amp; || \cdot ||_{P_{1}} &amp; \leq &amp; M||\cdot||_{P_2} \\
+||x||_\infty &amp; \leq &amp; ||x||_1 &amp; \leq &amp; n||x||_\infty \\
+||x||_\infty &amp; \leq &amp; ||x||_2 &amp; \leq &amp; \sqrt{n}||x||_\infty 
+\end{array}
+\]</span> <strong>定义2（矩阵范数)</strong> <span class="math inline">\(A = (a_{ij})m*n\)</span><br>
+满足定义1的三个条件且 <span class="math inline">\(||AB|| \leq ||A||\cdot||B||\)</span> 常用的矩阵范数<br>
+1-范数(列) <span class="math inline">\(||A|| = \max_{1 \leq j \leq n}\sum_{i=1}^{m}|a_{ij}|\)</span> <span class="math inline">\(\infty\)</span>-范数(行) <span class="math inline">\(||A|| = \max_{1 \leq i \leq m}\sum_{i=1}^n|a_{ij}|\)</span><br>
+2-范数(谱) <span class="math inline">\(||A|| = \max|A_TA的本征值|\)</span><br>
+F-范数 <span class="math inline">\(||A||_F = (\sum_{j=1}^n\sum_{i=1}^m|a_{ij}^2)^{\frac{1}{2}}\)</span></p>
+<p>矩阵常数可由向量范数诱导而得(相容性)</p>
+<h3 id="范数诱导的距离">范数诱导的距离</h3>
+<p>注:<em>距离满足定义1的三个条件且满足对称性(A到B的距离等于B到A的距离)。</em><br>
+<strong>定义3</strong>（闵可夫斯基距离）有<span class="math inline">\(x = (x_1,x_2,\cdots,x_n)_T,y=(y_1,y_2,\cdots,y_n)_T\)</span><br>
+<span class="math display">\[
+{\alpha}_P(x,y) = (\sum_{i=1}^n|x_i-y_i|^P)^{\frac{1}{p}}
+\]</span> <span class="math inline">\(1^o\,\)</span> P = 2  欧几里得距离<br>
+<span class="math inline">\(2^o\,\)</span> P = 1  曼哈顿距离 正南正北"导航"距离。 <span class="math inline">\(3^o\,\)</span> <span class="math inline">\(P = \infty\)</span> 切比雪夫距离 ：<br>
+<span class="math display">\[\alpha_P(x,y) = \max_{1 \leq i \leq n}|x_i-y_i|\]</span> 老师举了个例子即：国际象棋king移动到其他位置的最快路径长度。<br>
+如图：<br>
+<img src="曼哈顿距离和切比雪夫距离.png"> 曼哈顿距离为7，切比雪夫距离为7。 <span class="math inline">\(4^o\,\)</span> p = 0  汉明重量(即<span class="math inline">\(x_i = y_i\)</span>)： <span class="math display">\[\alpha_0(x,y) = \sum_{i=1}^n(x_i-y_i)^0\]</span> <img src="汉明距离.png" alt="3位二进制数"></p>
+<p><strong>定义(莱文斯坦/字符串距离)</strong> 从一个字符串变为另一个字符串的步数。<br>
+e.g. <span class="math inline">\(safe -&gt; security\)</span> 使用了7步。<br>
+<strong>定义(推土机距离)</strong>从一个概率分布变为另一个概率分布的最快步<br>
+<strong>定义(堪培拉距离)</strong>加权的曼哈顿<br>
+<span class="math display">\[\alpha_{can}(x,y) = \sum_{i=1}^n\frac{|x_i-y_i|}{|x_i+y_i|}\]</span></p>
+<h3 id="相似度">相似度</h3>
+<p>不是距离，定义1的前两个条件。<br>
+<strong>定义(余弦相似度)</strong> $_(x,y) = <br>
+<strong>定义(皮尔逊相关系数)</strong> <span class="math inline">\(x = (x_1,\cdots,x_n)^T,y = (y_1,\cdots,y_n)^T\)</span><br>
+<span class="math display">\[\rho_{x,y} = \frac{Cov(x,y)}{\sigma_x\sigma_y} = \frac{E[(x-\mu_x)(y-\mu_y)]}{\sigma_x\sigma_y}\]</span> e.g.<br>
+Alice 给Bob发送序列 第一次为<span class="math inline">\(x = (80,85,90,75,95)^T\)</span> ,第二次为<span class="math inline">\(y = (70,75,85,60,90)^T\)</span><br>
+计算得到<span class="math inline">\(\mu_x=85,\mu_y = 76,Cov(x,y) = 75,\sigma_x=7.07,\sigma_y=10.68,\rho_{x,y} = 0.997\)</span>。<br>
+<span class="math inline">\(\rho_{x,y}\)</span>接近于1，说明具有强线性正相关。</p>
+<p><strong>定义（斯皮尔曼相关系数）</strong><br>
+<span class="math display">\[\rho_{x,y} = \frac{\sum_{i=1}^n(R(x_i)-\overline{R(x)})(R(y_i)-\overline{R(y)})}{\sqrt{(\frac{1}{n}\sum_{i=1}^{n}(R(x_i)-\overline{R(x)}))(\frac{1}{n}\sum_{i=1}^n(R(y_i)-\overline{R(y)}))}}\]</span> R表示位次,简化版如下： <span class="math display">\[\rho_{x,y} = 1-\frac{6\cdot\sum_{i=1}^nd_i^2}{n(n^2-1)}\]</span></p>
+<p><strong>定义(杰拉德定理)</strong> <span class="math inline">\(X = \{x_1,\cdots,x_n\}, Y = \{y_1,\cdots,y_n\}\)</span> 二进制字符串 <span class="math display">\[\rho_j(X,Y) = \frac{|X\cap Y|}{|X\cup Y|}\]</span> <strong>定义(Sorensen-Dice指数)</strong> 文本分类和图像处理 <span class="math display">\[\rho_s(X,Y) = \frac{2\cdot |X\cap Y|}{|X|+|Y|}\]</span></p>
 
     </div>
 
@@ -293,7 +344,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8C%83%E6%95%B0%E3%80%81%E8%B7%9D%E7%A6%BB%E4%B8%8E%E7%9B%B8%E4%BC%BC%E5%BA%A6"><span class="nav-number">1.</span> <span class="nav-text">范数、距离与相似度</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8C%83%E6%95%B0%EF%BC%88%E2%80%9C%E9%95%BF%E5%BA%A6%E2%80%9D%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">范数（“长度”）</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8C%83%E6%95%B0%E9%95%BF%E5%BA%A6"><span class="nav-number">1.</span> <span class="nav-text">范数（“长度”）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8C%83%E6%95%B0%E8%AF%B1%E5%AF%BC%E7%9A%84%E8%B7%9D%E7%A6%BB"><span class="nav-number">2.</span> <span class="nav-text">范数诱导的距离</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%B8%E4%BC%BC%E5%BA%A6"><span class="nav-number">3.</span> <span class="nav-text">相似度</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
