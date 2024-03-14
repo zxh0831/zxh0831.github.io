@@ -162,6 +162,74 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/14/%E8%8C%83%E6%95%B0%E3%80%81%E8%B7%9D%E7%A6%BB%E4%B8%8E%E7%9B%B8%E4%BC%BC%E5%BA%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="hx">
+      <meta itemprop="description" content="pwn csapp">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hx's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/03/14/%E8%8C%83%E6%95%B0%E3%80%81%E8%B7%9D%E7%A6%BB%E4%B8%8E%E7%9B%B8%E4%BC%BC%E5%BA%A6/" class="post-title-link" itemprop="url">范数、距离与相似度</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-03-14 15:57:44 / 修改时间：17:27:23" itemprop="dateCreated datePublished" datetime="2024-03-14T15:57:44+08:00">2024-03-14</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BD%91%E5%AE%89%E6%95%B0%E5%9F%BA%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">网安数基笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="范数、距离与相似度"><a href="#范数、距离与相似度" class="headerlink" title="范数、距离与相似度"></a>范数、距离与相似度</h2><h3 id="范数（“长度”）"><a href="#范数（“长度”）" class="headerlink" title="范数（“长度”）"></a>范数（“长度”）</h3><p><strong>定义1</strong>：设$||\cdot||$为向量空间$R_{n}$ 的实值函数满足：<br>$1^o,$ &amp;nbsp;非负性:<br>$$ ||x|| \geq 0 $$<br>其中，$||x||&#x3D;0 \iff x &#x3D; 0$<br>$2^o,$ &amp;nbsp;齐次性：<br>$$\forall k\in R,||kx|| &#x3D; |k| ||x||$$<br>$3^o,$ &amp;nbsp;三角不等式：<br>$$||x+y||\leq ||x|| + ||y||$$<br>则把$||\cdot||$称为向量范数。<br><strong>常用的向量范数</strong><br>$x&#x3D;(x_1,x_2,\cdots,x_n)^T$<br>$1^o,$ &amp;nbsp;0-范数:<br>$$ {||x||}<em>0 &#x3D; x中非零元素的个数$$<br>$2^o,$ &amp;nbsp;1-范数:<br>$${||x||}<em>1 &#x3D; \sum</em>{i&#x3D;1}^n|x_i|$$<br>$3^o,$ &amp;nbsp;2-范数:<br>$$ ||x||<em>2 &#x3D; \sqrt{\sum</em>{i&#x3D;1}^nx_i^2}$$<br>$4^o,$ &amp;nbsp;$\infty$-范数:<br>$$<br>||x||<em>\infty &#x3D; \max</em>{1 \leq i \leq n}|x_i|<br>$$<br><strong>定理</strong> (范数的等价性)<br>$$<br>\begin{eqnarray}<br>m||\cdot||</em>{P_2} \leq || \cdot ||<em>{P</em>{1}} \leq M||\cdot||_{P_2} \<br>||x||_\infty \leq ||x||_1 \leq n||x||_\infty \<br>||x||_\infty \leq ||x||_2 \leq \sqrt{n}||x||_\infty<br>\end{eqnarray}<br>$$</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/21/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -696,14 +764,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
